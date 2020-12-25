@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 23 Ara 2020, 15:37:03
+-- Üretim Zamanı: 25 Ara 2020, 15:37:31
 -- Sunucu sürümü: 10.4.14-MariaDB
 -- PHP Sürümü: 7.2.34
 
@@ -524,16 +524,16 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`, `order`, `group`) VALUES
-(1, 'site.title', 'Site Title', 'Site Title', '', 'text', 1, 'Site'),
-(2, 'site.description', 'Site Description', 'Site Description', '', 'text', 2, 'Site'),
-(3, 'site.logo', 'Site Logo', '', '', 'image', 3, 'Site'),
-(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', '', '', 'text', 4, 'Site'),
-(5, 'admin.bg_image', 'Admin Background Image', '', '', 'image', 5, 'Admin'),
-(6, 'admin.title', 'Admin Title', 'Voyager', '', 'text', 1, 'Admin'),
-(7, 'admin.description', 'Admin Description', 'Welcome to Voyager. The Missing Admin for Laravel', '', 'text', 2, 'Admin'),
-(8, 'admin.loader', 'Admin Loader', '', '', 'image', 3, 'Admin'),
-(9, 'admin.icon_image', 'Admin Icon Image', '', '', 'image', 4, 'Admin'),
-(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin');
+(1, 'site.title', 'Site Title', 'Dentopol', '', 'text', 1, 'Site'),
+(2, 'site.description', 'Site Description', 'Ağız ve Diş Sağlığı', '', 'text', 2, 'Site'),
+(3, 'site.logo', 'Site Logo', 'settings/December2020/wkZwQAsJlRojNWK6QWy1.png', '', 'image', 3, 'Site'),
+(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', NULL, '', 'text', 4, 'Site'),
+(5, 'admin.bg_image', 'Admin Background Image', 'settings/December2020/inDuuOOvi9x8UdQ9SBoE.jpg', '', 'image', 5, 'Admin'),
+(6, 'admin.title', 'Admin Title', 'Dentopol', '', 'text', 1, 'Admin'),
+(7, 'admin.description', 'Admin Description', 'Dentopol - Admin Paneli', '', 'text', 2, 'Admin'),
+(8, 'admin.loader', 'Admin Loader', 'settings/December2020/Mgj1iWyVdgi3lbXEHCwR.png', '', 'image', 3, 'Admin'),
+(9, 'admin.icon_image', 'Admin Icon Image', 'settings/December2020/Dd9p6ZblW9H6L6qaTuBr.png', '', 'image', 4, 'Admin'),
+(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', NULL, '', 'text', 1, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -614,7 +614,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `avatar`, `email_verified_at`, `password`, `remember_token`, `settings`, `created_at`, `updated_at`) VALUES
 (1, 1, 'Admin', 'admin@admin.com', 'users/default.png', NULL, '$2y$10$hN2McJGWBtIfnwheCe.ToevhjwQNcY791BTvc40P6X6Cey.rgJ3b.', 'rvPWKVNO5pATxNiKdf5emEZcghfwiFap95IxbaIAsPeCL1gWJCwEOL9qcsTh', NULL, '2020-12-23 11:27:28', '2020-12-23 11:27:28'),
-(2, 1, 'Anıl GÜNDAL', 'a.gundal@talk.com.tr', 'users/default.png', NULL, '$2y$10$9sGNxmOE0O/psMhB5enAzesU/obf3cEj4X2vXERadyJ3RR8VU1Fb2', NULL, NULL, '2020-12-23 11:28:09', '2020-12-23 11:28:09');
+(2, 1, 'Anıl GÜNDAL', 'a.gundal@talk.com.tr', 'users/December2020/n16GWsCtXKgDnyL1ydEW.jpg', NULL, '$2y$10$9sGNxmOE0O/psMhB5enAzesU/obf3cEj4X2vXERadyJ3RR8VU1Fb2', NULL, '{\"locale\":\"tr\"}', '2020-12-23 11:28:09', '2020-12-25 09:26:01');
 
 -- --------------------------------------------------------
 
