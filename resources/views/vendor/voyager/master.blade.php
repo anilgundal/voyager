@@ -99,4 +99,5 @@ if (\Illuminate\Support\Str::startsWith(Auth::user()->avatar, 'http://') || \Ill
     </script>
 
 </body>
+
 </html>
