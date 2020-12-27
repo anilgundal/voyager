@@ -23,7 +23,12 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
 <!-- BEGIN: Page Vendor Datatable JS-->
-@if( (isset($dataType) &&  isset($dataType->slug)) && (($dataType->slug == "pages") || ($dataType->slug == "posts") || ($dataType->slug == "pages")))
+@if( (isset($dataType) &&  isset($dataType->slug)) && (
+    ($dataType->slug == "pages") || 
+    ($dataType->slug == "posts") || 
+    ($dataType->slug == "pages") || 
+    ($dataType->slug == "categories")
+    ))
     
 <script src="{{asset('app-assets/vendors/js/forms/select/select2.full.min.js')}}"></script>
 <script src="{{asset('app-assets/vendors/js/tables/datatable/datatables.min.js')}}"></script>

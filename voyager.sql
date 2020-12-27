@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: localhost
--- Üretim Zamanı: 25 Ara 2020, 15:37:31
+-- Anamakine: 127.0.0.1
+-- Üretim Zamanı: 27 Ara 2020, 22:15:33
 -- Sunucu sürümü: 10.4.14-MariaDB
--- PHP Sürümü: 7.2.34
+-- PHP Sürümü: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -198,7 +198,8 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'admin', '2020-12-23 11:27:26', '2020-12-23 11:27:26');
+(1, 'admin', '2020-12-23 11:27:26', '2020-12-23 11:27:26'),
+(2, 'panel', '2020-12-27 18:12:59', '2020-12-27 18:12:59');
 
 -- --------------------------------------------------------
 
@@ -613,8 +614,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `avatar`, `email_verified_at`, `password`, `remember_token`, `settings`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Admin', 'admin@admin.com', 'users/default.png', NULL, '$2y$10$hN2McJGWBtIfnwheCe.ToevhjwQNcY791BTvc40P6X6Cey.rgJ3b.', 'rvPWKVNO5pATxNiKdf5emEZcghfwiFap95IxbaIAsPeCL1gWJCwEOL9qcsTh', NULL, '2020-12-23 11:27:28', '2020-12-23 11:27:28'),
-(2, 1, 'Anıl GÜNDAL', 'a.gundal@talk.com.tr', 'users/December2020/n16GWsCtXKgDnyL1ydEW.jpg', NULL, '$2y$10$9sGNxmOE0O/psMhB5enAzesU/obf3cEj4X2vXERadyJ3RR8VU1Fb2', NULL, '{\"locale\":\"tr\"}', '2020-12-23 11:28:09', '2020-12-25 09:26:01');
+(2, 1, 'Anıl GÜNDAL', 'a.gundal@talk.com.tr', 'users/December2020/n16GWsCtXKgDnyL1ydEW.jpg', NULL, '$2y$10$L4ZC1IOj6C4Vk/LxPOE21.K8Mx75EHqcysNVCMnmcJ.LLBUQFW1Fa', NULL, '{\"locale\":\"tr\"}', '2020-12-23 11:28:09', '2020-12-27 16:06:35');
 
 -- --------------------------------------------------------
 
@@ -785,7 +785,7 @@ ALTER TABLE `failed_jobs`
 -- Tablo için AUTO_INCREMENT değeri `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `menu_items`
